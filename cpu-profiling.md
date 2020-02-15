@@ -18,8 +18,14 @@ $ dub build --build=profile
 
 ### callgrind
 
+Command:
+
 ```console
-$ valgrind --tool=callgrind ./binary
+$ valgrind --tool=callgrind --callgrind-out-file=callgrind.out.slow.1 ./slow
 ```
 
 D's symbols will need to be demangled by `ddemangle`.
+
+```console
+$ callgrind_annotate callgrind.out.slow.1| ddemangle
+```
