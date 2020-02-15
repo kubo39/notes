@@ -2,6 +2,8 @@
 
 ## Compiling a C dependency
 
+https://github.com/dlang/dub/wiki/Cookbook#compiling-a-c-dependency
+
 like this:
 
 ```sdl

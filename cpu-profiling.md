@@ -1,5 +1,7 @@
 # CPU profiling
 
+https://wiki.dlang.org/Development_tools#CPU_profiling
+
 ## Tracing
 
 ### Built-in `-profile`
