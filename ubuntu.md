@@ -19,3 +19,13 @@ net-tools: /sbin/route
 $ dpkg -l
 (...)
 ```
+
+## Using gold as system linker
+
+- https://code.dawg.eu/reducing-vibed-turnaround-time-part-1-faster-linking.html
+
+```console
+$ update-alternatives --install "/usr/bin/ld" "ld" "/usr/bin/ld.gold" 20
+$ update-alternatives --install "/usr/bin/ld" "ld" "/usr/bin/ld.bfd" 10
+$ update-alternatives --config ld  # manually select linker
+```
