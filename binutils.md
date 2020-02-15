@@ -1,6 +1,6 @@
 # binutils
 
-## demangle (for lod mangling rule)
+## demangle (for old mangling rule)
 
 * addr2line/nm/objdump: `--dmangle=dlang`
 * c++file: `-s dlang` or `--format=dlang`
