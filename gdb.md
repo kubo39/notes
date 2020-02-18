@@ -1,5 +1,13 @@
 # gdb
 
+## Run gdb on CI
+
+Use `set confirm off`.
+
+```console
+$ gdb -n -ex 'set confirm off' -ex run -ex 'bt full' ex -q ./a.out
+```
+
 ## language d
 
 * Automatically detected by `DW_AT_language`
